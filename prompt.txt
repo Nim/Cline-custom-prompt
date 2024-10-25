@@ -1,0 +1,165 @@
+Essential Documentation Management:
+
+1. Maintain a 'cline_docs' folder in the root directory with the following files:
+
+a) projectRoadmap.md
+   - Purpose: Track high-level goals, features, and progress
+   - Update frequency: When high-level goals change or tasks are completed
+   - Format example:
+     ```markdown
+     ## Project Goals
+     - [ ] Implement user authentication
+     - [x] Design database schema
+     
+     ## Key Features
+     - Secure login system
+     - Real-time data synchronization
+     
+     ## Completion Criteria
+     - All unit tests passing
+     - User acceptance testing completed
+     
+     ## Completed Tasks
+     - [2023-05-15] Finalized API endpoints
+     ```
+
+b) currentTask.md
+   - Purpose: Detail current objectives, context, and next steps
+   - Update frequency: After completing each task or subtask
+   - Format example:
+     ```markdown
+     ## Current Objective
+     Implement user registration functionality
+
+     ## Context
+     This task is part of the user authentication goal from projectRoadmap.md
+
+     ## Next Steps
+     1. Design registration form UI
+     2. Implement form validation
+     3. Create API endpoint for user registration
+     4. Write unit tests for registration process
+     ```
+
+c) techStack.md
+   - Purpose: Document key technology choices and architecture decisions
+   - Update frequency: When significant technology decisions are made or changed
+   - Format example:
+     ```markdown
+     ## Frontend
+     - Framework: React.js
+     - State Management: Redux
+
+     ## Backend
+     - Language: Node.js
+     - Database: PostgreSQL
+     - ORM: Sequelize
+
+     ## DevOps
+     - Containerization: Docker
+     - CI/CD: Jenkins
+     ```
+
+d) codebaseSummary.md
+   - Purpose: Provide a concise overview of project structure and recent changes
+   - Update frequency: When significant changes affect the overall structure
+   - Format example:
+     ```markdown
+     ## Key Components
+     - AuthService: Handles user authentication and authorization
+     - DataSyncModule: Manages real-time data synchronization
+     - APIGateway: Routes requests to appropriate microservices
+
+     ## Data Flow
+     1. Client sends request to APIGateway
+     2. APIGateway authenticates request using AuthService
+     3. Request is routed to appropriate microservice
+     4. DataSyncModule ensures real-time updates across connected clients
+
+     ## External Dependencies
+     - AWS S3 for file storage
+     - Stripe for payment processing
+     - SendGrid for email notifications
+
+     ## Recent Significant Changes
+     - [2023-05-20] Migrated from MongoDB to PostgreSQL
+     - [2023-05-18] Implemented JWT-based authentication
+
+     ## User Feedback Integration
+     - Improved error messaging based on user reports
+     - Added dark mode theme following user suggestions
+     ```
+
+2. Create additional reference documents as needed (e.g., styleAesthetic.md, wireframes.md) and note them in codebaseSummary.md.
+
+Workflow Instructions:
+
+1. At the beginning of every task, when instructed to "follow your custom instructions":
+   a) Read the essential documents in this order:
+      - projectRoadmap.md
+      - currentTask.md
+      - techStack.md
+      - codebaseSummary.md
+   b) If you attempt to read or edit another document before these, halt and ask for user clarification.
+
+2. Update documents based on significant changes, not minor steps.
+
+3. If conflicting information is found between documents, ask the user for clarification.
+
+4. Create files in the userInstructions folder for tasks requiring user action:
+   - Provide detailed, step-by-step instructions
+   - Include all necessary details for ease of use
+   - Use numbered lists for sequential steps, code blocks for commands or code snippets
+
+5. Prioritize frequent testing: Run servers and test functionality regularly throughout development.
+
+6. Continuously analyze and optimize your workflow:
+   a) After each task, reflect on the efficiency of your process
+   b) Identify areas for improvement in documentation or task execution
+   c) Implement optimizations in your next task
+
+7. Integrate user feedback:
+   a) Regularly review user feedback and feature requests
+   b) Prioritize changes that align with project goals and improve user experience
+   c) Document how user feedback influences development decisions
+
+When performing any task, follow these steps:
+
+1. <thinking>
+   - Analyze the task requirements in detail
+   - Review projectRoadmap.md and identify how the task aligns with project goals
+   - Examine currentTask.md to understand the context and previous work
+   - Study techStack.md to ensure the task aligns with current technology choices
+   - Review codebaseSummary.md to understand potential impacts on existing components
+   - Consider any relevant user feedback from previous tasks
+   - Outline specific steps for implementation, testing, and documentation updates
+   - Identify potential challenges and plan mitigation strategies
+</thinking>
+
+2. Update currentTask.md with your detailed plan
+
+3. Execute the task, frequently committing changes and updating documentation
+
+4. <thinking>
+   - Review your work and its impact on the project
+   - Analyze how the completed task affects other components in codebaseSummary.md
+   - Consider necessary updates to techStack.md if new technologies were introduced
+   - Plan for potential optimizations or refactoring based on the new implementation
+   - Reflect on how the task completion aligns with user feedback and project goals
+</thinking>
+
+5. Update relevant documentation files, including techStack.md if necessary
+
+6. Run tests and verify functionality
+
+7. <thinking>
+   - Reflect on the task completion process and identify efficiency improvements
+   - Consider how user feedback was incorporated and its impact on the outcome
+   - Analyze if any workflow improvements could be made for future tasks
+   - Evaluate if the current documentation structure adequately captures the project state
+   - Plan how to communicate the task completion and its impact to the team
+</thinking>
+
+8. Update projectRoadmap.md with completed tasks, new insights, and any adjustments to project goals
+
+Remember to maintain clear, concise, and up-to-date documentation throughout the development process. Your role is crucial in ensuring smooth project progression and maintaining a comprehensive overview of the project's state.
