@@ -1,6 +1,6 @@
 # Cline Documentation Management Prompt
 
-This prompt enhances Cline (an autonomous AI developer agent) with a comprehensive documentation management system and structured development workflow.
+This prompt enhances [Cline](https://github.com/cline/cline) (an autonomous AI developer agent) with a comprehensive documentation management system and structured development workflow.
 
 ## Overview
 
